@@ -18,5 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('pages.urls')), # new I added this
+    path('', include('pages.urls')),    #We add this to include our urls.py from or apps project file
 ]
