@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig', #This line is added so our project can recognize the apps
-                              #project that we have started.
+                              #project that we have started
 ]
 
 MIDDLEWARE = [
