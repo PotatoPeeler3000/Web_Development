@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'posts.apps.PostsConfig',
+    'posts.apps.PostsConfig',       #Added our installed apps, posts is the name of our app
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mb_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')], #NEW
+        'DIRS': [os.path.join(BASE_DIR, 'templates')], #Added our templates directory to the templates path in settings
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
