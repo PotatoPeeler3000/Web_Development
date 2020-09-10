@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'pages.apps.PagesConfig', # new that I added
+    'pages.apps.PagesConfig', #This line is added so our project can recognize the apps
+                              #project that we have started.
 ]
 
 MIDDLEWARE = [
