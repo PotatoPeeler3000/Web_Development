@@ -1,5 +1,7 @@
+<!--Display a message at the top of the webpage with this message-->
 <h1>Message board homepage</h1>
 
+<!--The <li> means a list in html, and it is storing all the posts within the post list-->
 <ul>
     {% for post in all_posts_list %}
         <li>{{ post.text }}</li>
