@@ -1,5 +1,8 @@
 from django.db import models
 
+#We added this line as well
+from django.urls import reverse
+
 # Create your models here.
 #This is all new information to the file
 
@@ -14,3 +17,6 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('post_detail', args=[str(self.id)])
