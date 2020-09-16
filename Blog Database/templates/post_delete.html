@@ -3,7 +3,7 @@
 {% block content %}
     <h1>Edit Post</h1>
     <form action="" method="post">{% csrf_token %}
-        {{ form.as_p }}    
-    <input type="submit" value="Update">
-</form>
+        <p>Are you sure you want to delete "{{ pform.as_p }}"?</p>
+        <input type="submit" value="Confirm">
+    </form>
 {% endblock content %}
