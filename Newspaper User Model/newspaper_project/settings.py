@@ -44,7 +44,10 @@ INSTALLED_APPS = [
     #Local
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig',
+    'articles.apps.ArticlesConfig',
 ]
+
+TIME_ZONE = 'America/New_York'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
